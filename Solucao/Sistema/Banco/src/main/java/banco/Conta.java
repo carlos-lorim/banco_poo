@@ -1,6 +1,6 @@
 package banco;
 
-public class  Conta {
+public class Conta {
 
     protected double saldo;
 
@@ -19,7 +19,7 @@ public class  Conta {
 
     public boolean sacar(double valor) {
         if ((this.saldo  - valor) >= 0) {
-            saldo = saldo - valor;
+            this.saldo = this.saldo - valor;
             return true;
         }
         return false;
